@@ -1,14 +1,16 @@
-# 🏎️ Japanese Grand Prix 2026: ML Prediction Engine
-An AI-powered system designed to predict the winner of the 2026 Japanese GP at Suzuka using real-time FP1 and FP2 telemetry.
+# 🏎️ GrandPrix-Oracle: 2026 Japanese GP Prediction
+A Machine Learning project to predict the winner of the 2026 Japanese Grand Prix at Suzuka, using real-time practice data.
 
-## 🌟 Project Overview
-This project uses **XGBoost** and **Monte Carlo Simulations** to analyze driver momentum and car performance under the 2026 "Active Aero" regulations.
+## 🌟 The Problem
+2026 introduced new "Active Aero" and "Boost Mode" regulations. Predicting winners requires analyzing how cars adapt their aerodynamics between high-speed corners and straights.
 
-## 🛠️ The Logic
-- **Data Ingestion:** Fetching live lap times from Suzuka.
-- **Feature Engineering:** Calculating "Momentum" (Performance jump from FP1 to FP2).
-- **Simulation:** Running the race 10,000 times to find the win probability.
+## 🛠️ How it Works
+1. **Data Ingestion:** Uses FastF1 API to pull FP1 and FP2 telemetry.
+2. **Feature Engineering:** Calculates "Momentum" (Position gain between sessions).
+3. **Modeling:** Uses **XGBoost** to rank driver performance.
 
-## 📊 Current Prediction (Post-FP2)
-- **Oscar Piastri (McLaren):** 34.6%
-- **Kimi Antonelli (Mercedes):** 19.6%
+## 📊 Latest Prediction (Friday, March 27, 2026)
+Based on today's FP2 where Oscar Piastri broke the Mercedes streak:
+- **Oscar Piastri:** 34.6% (Favorite)
+- **Kimi Antonelli:** 19.6%
+- **George Russell:** 13.0%
