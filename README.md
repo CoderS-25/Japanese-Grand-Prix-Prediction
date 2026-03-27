@@ -14,3 +14,4 @@ Based on today's FP2 where Oscar Piastri broke the Mercedes streak:
 - **Oscar Piastri:** 34.6% (Favorite)
 - **Kimi Antonelli:** 19.6%
 - **George Russell:** 13.0%
+![2026 Japanese GP Win Probability](win_probability_2026_gp.png)
